@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+  <div class="container">
+    <!-------------------------- BOARD ----------------------------->
+    <section class="board">
+      <div class="logo">
+        <img src="/images/logo.svg" alt="logo" />
+      </div>
+      <div class="board__score">
+        <span class="board__score__text board__score-child">score</span>
+
+        <div class="human board__score-child">
+          Human
+          <span class="board__score__nr board__score__nr-human">0</span>
+        </div>
+
+        <div class="computer board__score-child">
+          Computer
+          <span class="board__score__nr board__score__nr-computer">0</span>
+        </div>
+      </div>
+    </section>
+    <!------------------------END BOARD ----------------------------->
+
+    <!------------------------ GAME ----------------------------->
+    <div class="game__container">
+      <section class="triangle">
+        <div class="triangle__item triangle__0">
+          <img src="/images/icon-paper.svg" alt="Icon Paper" class="triangle__0-img" />
+        </div>
+
+        <div class="triangle__item triangle__1">
+          <img src="/images/icon-scissors.svg" alt="Icon Scissors" class="triangle__1-img" />
+        </div>
+
+        <div class="triangle__item triangle__2">
+          <img src="/images/icon-rock.svg" alt="Icon Rock" class="triangle__2-img" />
+        </div>
+      </section>
+
+      <section class="confrontation">
+
+        <div class="confrontation__box human-pick">
+          <span class="confrontation__text">you picked</span>
+          <div class="pulse pulse-human">
+            <div class="ring ring-human"></div>
+            <div class="ring ring-human"></div>
+            <div class="ring ring-human"></div>
+            <div class="ring ring-human"></div>
+            <div class="confrontation__imgs">
+              <div class="confrontation__imgs__img"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="confrontation__result">
+          <span class="confrontation__result__text">YOU WIN</span>
+          <button class="confrontation__result__btn">play again</button>
+        </div>
+
+        <div class="confrontation__box machine-pick">
+          <span class="confrontation__text">the house picked</span>
+
+          <div class="pulse pulse-machine">
+            <div class="ring ring-machine"></div>
+            <div class="ring ring-machine"></div>
+            <div class="ring ring-machine"></div>
+            <div class="ring ring-machine"></div>
+            <div class="confrontation__machine-imgs">
+              <div class="confrontation__machine-imgs-img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="confrontation__result confrontation__result-mobile">
+      <span class="confrontation__result__text">YOU WIN</span>
+      <button class="confrontation__result__btn">play again</button>
+    </div>
+    <!------------------------ END GAME ----------------------------->
+
+    <!------------------------ POPUP MODAL ----------------------------->
+    <div class="popup-overlay">
+      <div class="popup-content">
+        <div class="popup-content-container">
+          <div class="popup-content-text">rules</div>
+          <div class="close-btn"></div>
+        </div>
+        <img src="/images/image-rules.svg" alt="Rules" />
+      </div>
+    </div>
+    <!------------------------ END POPUP MODAL ----------------------------->
+
+    <!------------------------ RULES BUTTON ----------------------------->
+
+    <button class="rules">Rules</button>
+    <!------------------------ END RULES BUTTON ----------------------------->
+
+    <!------------------------ CREDITS ----------------------------->
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="#">Bogdan Alexa</a>.
+    </div>
+    <!------------------------ END CREDITS ----------------------------->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

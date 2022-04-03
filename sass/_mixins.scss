@@ -1,0 +1,16 @@
+// Breakpoints
+@mixin breakpoint($device) {
+  @if $device == mobile {
+    @media screen and (max-width: 375px) {
+      @content;
+    }
+  }
+}
+
+$container: 1200px;
+$container-laptop: 1000px;
+$container-tablet: 750px;
+$laptop-max: 1367px;
+$tablet-max: 1024px;
+$phone-max: 768px;
+$phone-small-max: 320px;

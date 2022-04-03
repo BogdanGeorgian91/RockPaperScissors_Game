@@ -1,0 +1,26 @@
+.rules {
+  justify-self: end;
+  align-self: end;
+  margin-right: 7rem;
+  margin-bottom: 2rem;
+
+  @include breakpoint(mobile) {
+    justify-self: center;
+    align-self: center;
+    margin-right: 0;
+  }
+
+  background: none;
+  color: white;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  border: 1px solid hsl(217, 16%, 45%);
+  border-radius: 1rem;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: hsl(214, 47%, 23%);
+  }
+}

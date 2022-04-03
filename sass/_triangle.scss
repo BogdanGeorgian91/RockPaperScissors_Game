@@ -1,0 +1,271 @@
+.game__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.triangle {
+  justify-self: center;
+  width: 30.5rem;
+  height: 30rem;
+
+  background-image: url("/images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  position: relative;
+
+  @include breakpoint(mobile) {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  &-disabled {
+    display: none;
+  }
+
+  &__item {
+    padding: 0.5rem;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2rem solid var(--border-color-0);
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    @include breakpoint(mobile) {
+      border-width: 1.3rem;
+    }
+  }
+
+  &__0 {
+    position: absolute;
+    top: -4rem;
+    left: -2rem;
+
+    &-img {
+      padding: 2.5rem;
+
+      @include breakpoint(mobile) {
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  &__1 {
+    position: absolute;
+    top: -4rem;
+    right: -2rem;
+    border-color: var(--border-color-1);
+
+    &-img {
+      padding: 2.5rem;
+
+      @include breakpoint(mobile) {
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  &__2 {
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+    border-color: var(--border-color-2);
+
+    &-img {
+      padding: 2.5rem;
+
+      @include breakpoint(mobile) {
+        padding: 1.5rem;
+      }
+    }
+  }
+}
+
+.confrontation {
+  display: none;
+
+  &-active {
+    display: flex;
+    gap: 4rem;
+
+    @include breakpoint(mobile) {
+      align-items: flex-start;
+      gap: 1.5rem;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 4rem;
+    flex: 1;
+
+    @include breakpoint(mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  &__imgs {
+    border-radius: 50%;
+    border: 2rem solid var(--border-color-0);
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 20rem;
+    z-index: 5000;
+
+    @include breakpoint(mobile) {
+      width: 11rem;
+      height: 11rem;
+      border-width: 1.3rem;
+    }
+
+    &__img {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 9rem;
+      height: 11rem;
+
+      @include breakpoint(mobile) {
+        width: 5rem;
+        height: 7rem;
+      }
+
+      &-0 {
+        background-image: url("/images/icon-paper.svg");
+      }
+
+      &-1 {
+        background-image: url("/images/icon-scissors.svg");
+      }
+
+      &-2 {
+        background-image: url("/images/icon-rock.svg");
+      }
+    }
+  }
+
+  &__machine-imgs {
+    border-radius: 50%;
+    background-color: #161f3b;
+
+    width: 20rem;
+    height: 20rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(mobile) {
+      width: 11rem;
+      height: 11rem;
+      border-width: 1.3rem !important;
+    }
+
+    &-img {
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width: 9rem;
+      height: 11rem;
+
+      @include breakpoint(mobile) {
+        width: 5rem;
+        height: 7rem;
+      }
+
+      &-0 {
+        background-image: url("/images/icon-paper.svg");
+      }
+
+      &-1 {
+        background-image: url("/images/icon-scissors.svg");
+      }
+
+      &-2 {
+        background-image: url("/images/icon-rock.svg");
+      }
+    }
+  }
+
+  &__result {
+    text-transform: uppercase;
+    display: none;
+
+    &-active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+
+      @include breakpoint(mobile) {
+        display: none;
+      }
+    }
+
+    &-mobile {
+      display: none;
+
+      @include breakpoint(mobile) {
+        display: none;
+
+        &-active {
+          display: flex;
+        }
+      }
+    }
+
+    &__text {
+      font-size: 5.5rem;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      text-align: center;
+
+      @include breakpoint(mobile) {
+        font-size: 4rem;
+      }
+    }
+
+    &__btn {
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      letter-spacing: 0.2rem;
+      cursor: pointer;
+
+      padding: 1rem 4.5rem;
+      border-radius: 1rem;
+      border: none;
+
+      &:hover {
+        color: green;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: left;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+
+  font-size: 2.4rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: hsl(229, 25%, 31%);
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
+  background-color: white;
+  max-width: 1000px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+
+  &-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility: visible;
+}
+
+.close-btn {
+  color: hsl(217, 16%, 45%);
+  cursor: pointer;
+  background-image: url("/images/x.svg");
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    border: 2px dashed black;
+    padding: 5px;
+    border-radius: 50%;
+  }
+}
