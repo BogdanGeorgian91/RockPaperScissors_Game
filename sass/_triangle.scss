@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+
+  @include breakpoint(mobile) {
+    margin-top: 1rem;
+  }
 }
 
 .triangle {

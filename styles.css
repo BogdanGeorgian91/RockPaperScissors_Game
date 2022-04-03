@@ -100,8 +100,8 @@ body {
 .board {
   border: 2px solid #606e85;
   border-radius: 1rem;
-  padding: 0.5rem 3rem;
-  margin: 0 2rem 0 2rem;
+  padding: 1rem 3rem;
+  margin: 0 2rem 4rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -189,6 +189,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 670px) {
+  .game__container {
+    margin-top: 1rem;
+  }
 }
 
 .triangle {
