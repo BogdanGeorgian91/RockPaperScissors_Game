@@ -9,10 +9,7 @@ See the project live here:<br>
 https://rock-paper-scissors-jquery.netlify.app/
 
 <br><br>
-
 Here's a video of the user flow: <br><br>
-
-
 
 https://user-images.githubusercontent.com/85880721/161429925-ce533262-fa8a-4f4d-8d66-eea16d750fff.mp4
 
