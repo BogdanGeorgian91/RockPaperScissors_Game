@@ -100,8 +100,8 @@ body {
 .board {
   border: 2px solid #606e85;
   border-radius: 1rem;
-  padding: 1.5rem 3rem;
-  margin: 0 2rem 6rem 2rem;
+  padding: 0.5rem 3rem;
+  margin: 0 2rem 0 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -116,6 +116,7 @@ body {
 }
 .board .logo {
   max-width: 11rem;
+  align-self: flex-start;
 }
 .board__score {
   border-radius: 1rem;
@@ -125,8 +126,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   background-color: #fafafa;
-  padding: 1rem;
-  gap: 1rem;
   border: 2px solid white;
 }
 .board__score-child:first-child {

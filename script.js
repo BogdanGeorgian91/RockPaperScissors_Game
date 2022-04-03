@@ -112,39 +112,33 @@ $(".triangle__item").each(function (index) {
     } else if (humanChoice === 0 && machineChoice === 1) {
       lose();
       setTimeout(addPulseMachine, 1000);
-      changeScore("lose");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("lose"), 1500);
     } else if (humanChoice === 0 && machineChoice === 2) {
       win();
       setTimeout(addPulseHuman, 1000);
-      changeScore("win");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("win"), 1500);
     } else if (humanChoice === 1 && machineChoice === 0) {
       win();
       setTimeout(addPulseHuman, 1000);
-      changeScore("win");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("win"), 1500);
     } else if (humanChoice === 1 && machineChoice === 2) {
       lose();
       setTimeout(addPulseMachine, 1000);
-      changeScore("lose");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("lose"), 1500);
     } else if (humanChoice === 2 && machineChoice === 0) {
       lose();
       setTimeout(addPulseMachine, 1000);
-      changeScore("lose");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("lose"), 1500);
     } else if (humanChoice === 2 && machineChoice === 1) {
       win();
       setTimeout(addPulseHuman, 1000);
-      changeScore("win");
-      // showResult();
-      setTimeout(showResult, 1500);
+      setTimeout(showResult, 1200);
+      setTimeout(() => changeScore("win"), 1500);
     }
 
     resetBtn.on("click", function () {

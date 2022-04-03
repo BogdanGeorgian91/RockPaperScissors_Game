@@ -1,8 +1,8 @@
 .board {
   border: 2px solid hsl(217, 16%, 45%);
   border-radius: 1rem;
-  padding: 1.5rem 3rem;
-  margin: 0 2rem 6rem 2rem;
+  padding: .5rem 3rem;
+  margin: 0 2rem 0 2rem;
 
   display: flex;
   justify-content: space-around;
@@ -17,6 +17,7 @@
 
   .logo {
     max-width: 11rem;
+    align-self: flex-start;
   }
 
   &__score {
@@ -27,8 +28,6 @@
     align-items: center;
     flex-wrap: wrap;
     background-color: #fafafa;
-    padding: 1rem;
-    gap: 1rem;
 
     border: 2px solid white;
 
