@@ -1,7 +1,7 @@
 # RockPaperScissors_Game
 
 It's was a challenge from frontendmentor.io. <br>
-I had fun doing it, although it was really challenging at various points, yet it was great when I found the solutions. <br>
+I had fun doing it, although it was really challenging at various points, yet it was great when I've figured out the solutions. <br>
 I think it could use some code refactoring.<br>
 On the JavaScript side, I used JQUERY, and on the CSS side I helped myself with SASS. <br>
 
